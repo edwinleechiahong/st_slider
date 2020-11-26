@@ -33,4 +33,4 @@ set_png_as_page_bg('./Copy-GettyImages-1059426386.jpg')
 x = st.slider('Select a value')
 st.write(x, 'squared is', x * x)
 
-components.iframe("""https://www.youtube.com/embed/h7tQ9qGD3Z0""" , scrolling = True , height = 350)
+##components.iframe("""https://www.youtube.com/embed/h7tQ9qGD3Z0""" , scrolling = True , height = 350)
