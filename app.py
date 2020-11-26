@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import base64
 
 @st.cache(allow_output_mutation=True)
@@ -21,7 +22,16 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
+st.set_page_config(
+    page_title="Kantar Brand Growth Lab",
+    page_icon='./KANTAR_Small_Logo_White_RGB.png',
+    layout="centered",
+    initial_sidebar_state="expanded"
+    )
+
 set_png_as_page_bg('./Copy-GettyImages-1059426386.jpg')
 
 x = st.slider('Select a value')
 st.write(x, 'squared is', x * x)
+
+components.iframe("""https://www.youtube.com/embed/h7tQ9qGD3Z0""" , scrolling = True , height = 350)
