@@ -24,7 +24,6 @@ def set_png_as_page_bg(png_file):
 
 st.set_page_config(
     page_title="Kantar Brand Growth Lab",
-    page_icon='./KANTAR_Small_Logo_White_RGB.png',
     layout="centered",
     initial_sidebar_state="expanded"
     )
